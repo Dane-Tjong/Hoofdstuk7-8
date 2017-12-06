@@ -46,7 +46,7 @@ public class Praktijkopdracht extends Applet{
     }
 
     public void paint(Graphics g) {
-        g.drawString("het antwoord = "+antwoord,50,60);
+        g.drawString("basis calculator",50,60);
     }
 
     class keerListener implements ActionListener {
@@ -58,6 +58,8 @@ public class Praktijkopdracht extends Applet{
             cijfer2 = Double.parseDouble(s2);
 
             antwoord = cijfer1*cijfer2;
+            calc1.setText(""+antwoord);
+            calc2.setText("");
             repaint();
         }
     }
@@ -71,6 +73,8 @@ public class Praktijkopdracht extends Applet{
             cijfer2 = Double.parseDouble(s2);
 
             antwoord = cijfer1/cijfer2;
+            calc1.setText(""+antwoord);
+            calc2.setText("");
             repaint();
         }
     }
@@ -84,6 +88,8 @@ public class Praktijkopdracht extends Applet{
             cijfer2 = Double.parseDouble(s2);
 
             antwoord = cijfer1+cijfer2;
+            calc1.setText(""+antwoord);
+            calc2.setText("");
             repaint();
         }
     }
@@ -97,6 +103,8 @@ public class Praktijkopdracht extends Applet{
             cijfer2 = Double.parseDouble(s2);
 
             antwoord = cijfer1-cijfer2;
+            calc1.setText(""+antwoord);
+            calc2.setText("");
             repaint();
         }
     }
